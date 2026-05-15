@@ -2,9 +2,7 @@ diff --git a/chrome/install_static/chromium_install_modes.h b/chrome/install_sta
 index ee62888f89705..7ec72d302bc4b 100644
 --- a/chrome/install_static/chromium_install_modes.h
 +++ b/chrome/install_static/chromium_install_modes.h
-@@ -21,9 +21,9 @@ inline constexpr wchar_t kCompanyPathName[] = L"";
--inline constexpr wchar_t kCompanyPathName[] = L"";
-+inline constexpr wchar_t kCompanyPathName[] = L"BrowserOS";
+@@ -21,7 +21,7 @@ inline constexpr wchar_t kCompanyPathName[] = L"";
  
  // The brand-specific product name to be included as a component of the install
  // and user data directory paths.
@@ -12,8 +10,7 @@ index ee62888f89705..7ec72d302bc4b 100644
 +inline constexpr wchar_t kProductPathName[] = L"BrowserOS";
  
  // The brand-specific safe browsing client name.
--inline constexpr char kSafeBrowsingName[] = "chromium";
-+inline constexpr char kSafeBrowsingName[] = "browseros";
+ inline constexpr char kSafeBrowsingName[] = "chromium";
 @@ -44,48 +44,49 @@ inline constexpr auto kInstallModes = std::to_array<InstallConstants>({
              L"",  // Empty install_suffix for the primary install mode.
          .logo_suffix = L"",  // No logo suffix for the primary install mode.
